@@ -1,0 +1,17 @@
+[project]
+name = "refusal-direction"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.5.2",
+    "datasets>=3.5.0",
+    "einops>=0.8.1",
+    "jaxtyping>=0.3.0",
+    "litellm>=1.64.1",
+    "matplotlib>=3.10.1",
+    "torch>=2.6.0",
+    "transformers>=4.50.2",
+    "vllm>=0.8.2",
+]

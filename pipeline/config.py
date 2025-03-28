@@ -1,8 +1,8 @@
-
 import os
 
 from dataclasses import dataclass
 from typing import Tuple
+
 
 @dataclass
 class Config:
@@ -21,4 +21,6 @@ class Config:
     ce_loss_n_batches: int = 2048
 
     def artifact_path(self) -> str:
-        return os.path.join(os.path.dirname(os.path.realpath(__file__)), "runs", self.model_alias)
+        return os.path.join(
+            os.path.dirname(os.path.realpath(__file__)), "runs", self.model_alias
+        )
