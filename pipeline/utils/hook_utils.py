@@ -8,7 +8,7 @@ from torch import Tensor
 
 
 @contextlib.contextmanager
-def qadd_hooks(
+def add_hooks(
     module_forward_pre_hooks: List[Tuple[torch.nn.Module, Callable]],
     module_forward_hooks: List[Tuple[torch.nn.Module, Callable]],
     **kwargs,

@@ -262,7 +262,6 @@ def run_pipeline(model_path):
     harmful_train, harmless_train, harmful_val, harmless_val = filter_data(
         cfg, model_base, harmful_train, harmless_train, harmful_val, harmless_val
     )
-    import ipdb;ipdb.set_trace()
     # 1. Generate candidate refusal directions
     candidate_directions = generate_and_save_candidate_directions(
         cfg, model_base, harmful_train, harmless_train
