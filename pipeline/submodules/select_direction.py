@@ -192,7 +192,6 @@ def select_direction(
     n_pos, n_layer, d_model = candidate_directions.shape
 
     # model_baseはLLMの事か
-    import ipdb;ipdb.set_trace()
     baseline_refusal_scores_harmful = get_refusal_scores(
         model_base.model,
         harmful_instructions,
